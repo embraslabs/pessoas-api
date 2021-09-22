@@ -1,3 +1,16 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  defaults format: :json do
+    root 'home#index'    
+
+    controller :pessoas do
+      get  '/pessoas',      action: :index,   as: :pessoas
+      post '/pessoas',      action: :create,  as: false
+      get  '/pessoas/:id',  action: :show,    as: :pessoa
+    end
+
+    # resources :pessoas, only: [:index, :show]
+  end
+
+  # Verbos:
+  # GET, POST, PATCH, DELETE
 end
