@@ -1,0 +1,29 @@
+GET http://localhost:3010/pessoas
+
+###
+
+POST http://localhost:3010/pessoas
+content-type: application/json
+
+{
+  "name": "Bla bla bla",
+  "email": "joao.scarpa@designa.com.br"
+}
+
+###
+
+PATCH http://localhost:3010/pessoas/14
+content-type: application/json
+
+{
+  "name": "Barbosa Oo",
+  "email": "barbosa@designa.com.br"
+}
+
+###
+
+GET http://localhost:3010/pessoas/99
+
+### 
+
+DELETE http://localhost:3010/pessoas/14
