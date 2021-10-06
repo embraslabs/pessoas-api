@@ -19,7 +19,7 @@ services:
       - SECRET_KEY_BASE=development
       - RAILS_ENV=development
       - PORT=3000
-      - DATABASE_NAME=pessoas
+      - DATABASE_NAME=pessoas1
       - DATABASE_HOST=postgres
       - DATABASE_USERNAME=postgres
       - DATABASE_PASSWORD=postgres
